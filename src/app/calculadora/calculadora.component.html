@@ -1,0 +1,26 @@
+<div class="calculadora-component">
+    <h3 class="title">Calculadora</h3>
+
+    <div class="calculadora-container">
+        <div class="input-block">
+            <label for="">Primeiro Número</label>
+            <input type="number" #inputVarA value=0>
+        </div>
+        <div class="input-block">
+            <label for="">Operador</label>
+            <select type="operator" #inputOperator>
+                <option *ngFor="let op of operators" value={{op.nome}}>{{op.simbolo}}</option>
+            </select>
+        </div>
+        <div class="input-block">
+            <label for="">Segundo Número</label>
+            <input type="number" #inputVarB value=0>
+        </div>
+        
+    </div>
+    <button class="calcular" (click)="onClickCalcular(inputOperator.value,inputVarA.value,inputVarB.value)">Calcular</button>
+    <div class="result-container">
+        <p>Resultado: </p>
+        <p class="result">{{result}}</p>
+    </div>
+</div>
