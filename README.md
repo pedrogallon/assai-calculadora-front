@@ -1,4 +1,4 @@
-## Development server
-Run `npm install'<br/>
-Run `ng serve --open` for a dev server.  <br/>
-Navigate to `http://localhost:4200/`.
+## Development server\
+<p>Run `npm install'</p>
+<p>Run `ng serve --open` for a dev server.\</p>
+<p>Navigate to `http://localhost:4200/`.<p>
